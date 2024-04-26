@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inline Demo</title>
+
+    <style>
+        .dropdown {
+            width: 200px;
+            border: 1px solid skyblue;
+        }
+
+        .dropdown.show .dropdown-item {
+            display: block;
+        }
+
+        .dropdown-item {
+            display: none;
+            padding: 10px;
+            cursor: pointer;
+            user-select: none;
+            font-weight: bold;
+        }
+
+        .dropdown-item.selected {
+            display: block;
+        }
+
+        .dropdown-item:hover {
+            background-color: skyblue;
+        }
+    </style>
+
+    <script src="../shortvanilla.js" defer></script>
+</head>
+
+<body>
+    <form>
+        <div class="dropdown" onclick="
+            this.classList.toggle('show'); 
+            this.qs('.selected').html = event.target.html; 
+            this.qs('input').value = event.target.txt;">
+
+            <div class="dropdown-item selected">Item 1</div>
+            <div class="dropdown-item">Item 1</div>
+            <div class="dropdown-item">Item 2</div>
+            <div class="dropdown-item">Item 3</div>
+            
+            <input type="hidden" value="Item 1" name="dropdown">
+        </div>
+
+        <input type="submit">
+    </form>
+</body>
+</html>
