@@ -1,5 +1,7 @@
 # shortvanilla.js
 
+![GitHub file size in bytes](https://img.shields.io/github/size/osmium2259/shortvanilla-js/shortvanilla.min.js?style=flat-square&label=Minified) ![GitHub License](https://img.shields.io/github/license/osmium2259/shortvanilla-js?style=flat-square&label=License)
+
 > [!WARNING]
 > This is a work in progress! Bug reports are appreciated :)
 
