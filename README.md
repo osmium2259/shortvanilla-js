@@ -95,6 +95,8 @@ Here is a complete list of current supported built-in replacements.
 | `clearTimeout`           | `clrTimer`   |
 | `setInterval`            | `repeat`     |
 | `clearInterval`          | `clrRepeat`  |
+| `localStorage`           | `local`      |
+| `sessionStorage`         | `session`    |
 | `addEventListener`       | `on`         |
 | `removeEventListener`    | `off`        |
 | `dispatchEvent`          | `emit`       |
@@ -105,6 +107,7 @@ Here is a complete list of current supported built-in replacements.
 | `querySelector`          | `qs`         |
 | `querySelectorAll`       | `qss`        |
 | `insertAdjacentHTML`     | `putHTML`    |
+| `insertAdjacentElement`  | `putEl`      |
 | `innerHTML`              | `html`       |
 | `outerHTML`              | `ohtml`      |
 | `forEach`                | `each`       |

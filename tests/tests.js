@@ -61,6 +61,10 @@ suite('Names', function () {
         assert.strictEqual(this.el.putHTML, this.el.insertAdjacentHTML, this.errMsg('<element>.putHTML', '<element>.insertAdjacentHTML'))
     })
 
+    test('putEl', function() {
+        assert.strictEqual(this.el.putEl, this.el.insertAdjacentElement, this.errMsg('<element>.putEl', '<element>.insertAdjacentElement'))
+    })
+
     test('each', function () {
         assert.strictEqual(this.nodeList.each, this.nodeList.forEach, this.errMsg('<nodeList>.each', '<nodeList>.forEach'))
     })
@@ -106,5 +110,13 @@ suite('Names', function () {
 
     test('ohtml', function () {
         assert.strictEqual(this.el.ohtml, this.el.outerHTML, this.errMsg('<element>.ohtml', '<element>.outerHTML'))
+    })
+
+    test('local', function() {
+        assert.strictEqual(window.local, window.localStorage, this.errMsg('window.local', 'window.localStorage'))
+    })
+
+    test('session', function() {
+        assert.strictEqual(window.session, window.sessionStorage, this.errMsg('window.session', 'window.sessionStorage'))
     })
 })
