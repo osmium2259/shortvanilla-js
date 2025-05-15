@@ -33,6 +33,17 @@ window.SHORTVANILLA_NAMES = [
     [Element.prototype, 'outerHTML', 'ohtml'],
     [NodeList.prototype, 'forEach', 'each'],
     [Node.prototype, 'textContent', 'txt'],
+    [RadioNodeList.prototype, 'value', 'val'],
+    [HTMLTextAreaElement.prototype, 'value', 'val'],
+    [HTMLSelectElement.prototype, 'value', 'val'],
+    [HTMLProgressElement.prototype, 'value', 'val'],
+    [HTMLOutputElement.prototype, 'value', 'val'],
+    [HTMLOptionElement.prototype, 'value', 'val'],
+    [HTMLMeterElement.prototype, 'value', 'val'],
+    [HTMLLIElement.prototype, 'value', 'val'],
+    [HTMLInputElement.prototype, 'value', 'val'],
+    [HTMLDataElement.prototype, 'value', 'val'],
+    [HTMLButtonElement.prototype, 'value', 'val'],
 ]
 
 for (const name of SHORTVANILLA_NAMES) {

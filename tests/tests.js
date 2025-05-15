@@ -119,4 +119,36 @@ suite('Names', function () {
     test('session', function() {
         assert.strictEqual(window.session, window.sessionStorage, this.errMsg('window.session', 'window.sessionStorage'))
     })
+
+    test('value', function() {
+        const form = document.createElement('form')
+        form.innerHTML = `
+            <input type="radio" name="radio">
+            <input type="radio" name="radio">
+        `
+
+        const radioNodeList = form.elements.namedItem('radio')
+        const textarea = document.createElement('textarea')
+        const select = document.createElement('select')
+        const progress = document.createElement('progress')
+        const output = document.createElement('output')
+        const option = document.createElement('option')
+        const meter = document.createElement('meter')
+        const li = document.createElement('li')
+        const input = document.createElement('input')
+        const data = document.createElement('data')
+        const button = document.createElement('button')
+
+        assert.strictEqual(radioNodeList.val, radioNodeList.value, this.errMsg('<radioNodeList>.val', '<radioNodeList>.value'))
+        assert.strictEqual(textarea.val, textarea.value, this.errMsg('<textarea>.val', '<textarea>.value'))
+        assert.strictEqual(select.val, select.value, this.errMsg('<select>.val', '<select>.value'))
+        assert.strictEqual(progress.val, progress.value, this.errMsg('<progress>.val', '<progress>.value'))
+        assert.strictEqual(output.val, output.value, this.errMsg('<output>.val', '<output>.value'))
+        assert.strictEqual(option.val, option.value, this.errMsg('<option>.val', '<option>.value'))
+        assert.strictEqual(meter.val, meter.value, this.errMsg('<meter>.val', '<meter>.value'))
+        assert.strictEqual(li.val, li.value, this.errMsg('<li>.val', '<li>.value'))
+        assert.strictEqual(input.val, input.value, this.errMsg('<input>.val', '<input>.value'))
+        assert.strictEqual(data.val, data.value, this.errMsg('<data>.val', '<data>.value'))
+        assert.strictEqual(button.val, button.value, this.errMsg('<button>.val', '<button>.value'))
+    })
 })

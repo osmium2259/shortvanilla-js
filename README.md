@@ -112,6 +112,7 @@ Here is a complete list of current supported built-in replacements.
 | `outerHTML`              | `ohtml`      |
 | `forEach`                | `each`       |
 | `textContent`            | `txt`        |
+| `value`                  | `val`        |
 
 ## Contributing
 
